@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Financial Calculator{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="display-4 mb-4">Financial Calculator</h1>
+    <p class="lead mb-5">Choose a calculator to get started:</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Mortgage Calculator</h5>
+                    <p class="card-text">Calculate mortgage payments, view amortization schedule, and analyze payment breakdown over time.</p>
+                    <a href="/mortgage" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Investment Calculator</h5>
+                    <p class="card-text">Plan your investments with compound interest calculations and growth projections.</p>
+                    <a href="/investment" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Portfolio Simulator</h5>
+                    <p class="card-text">Run Monte Carlo simulations to analyze portfolio performance and risk metrics.</p>
+                    <a href="/portfolio" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
